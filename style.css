@@ -1,3 +1,28 @@
+:root {
+    font-size: 16px;
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin-left: 5rem;
+    /* padding: 1rem; */
+}
+
+.navbar {
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--bg-primary);
+}
+
 .top-middle {
     position: absolute;
     top: 25%;
@@ -10,11 +35,14 @@ h1 {
     font-weight: normal;
     font-family: 'Staatliches', cursive;
     margin-bottom: 0;
-    font-size: 4vw;
+    font-size: 8vh;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .under-title {
-    font-size: 1.5vw;
+    font-size: 2.5vh;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 p {
@@ -22,22 +50,142 @@ p {
     margin-top: 0;
 }
 
-.buttons {
+.button1 {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 45%;
     transform: translate(-50%, -50%);
     text-align: center;
 }
 
-.left-text {
-    float: left;
-    margin-right: 2vw;
+.button2 {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
-.right-text {
-    float: right;
-    margin-left: 2vw;
+@media only screen and (max-width: 600px) {
+    .left-text {
+        /* float: left; */
+        /* margin-right: 2vw; */
+        /* font-size: 2vh; */
+        padding: 5px;
+        border: 2px black solid;
+        border-radius: 50px;
+        background-color: rgba(0, 0, 0, 0.2);
+        font-size: 1.7vh;
+    }
+
+    .left-text p {
+        color: white;
+    }
+
+    .right-text {
+        /* float: right; */
+        /* margin-left: 2vw; */
+        /* font-size: 2vh; */
+        border: 2px black solid;
+        border-radius: 50px;
+        background-color: rgba(0, 0, 0, 0.2);
+        padding: 5px;
+        font-size: 1.7vh;
+    }
+
+    .right-text p {
+        color: white;
+    }
+
+    .button1 {
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .button2 {
+        position: absolute;
+        top: 50%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    h1 {
+        font-weight: normal;
+        font-family: 'Staatliches', cursive;
+        margin-bottom: 0;
+        font-size: 6vh;
+        text-align: center;
+    }
+
+    .under-title {
+        font-size: 2.5vh;
+    }
+
+}
+
+@media only screen and (min-width: 600px) {
+    .left-text {
+        float: left;
+        /* margin-right: 2vw; */
+        /* font-size: 2vh; */
+        padding: 5px;
+        border: 2px black solid;
+        border-radius: 50px;
+        background-color: black;
+        font-size: 2.5vh;
+        box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .left-text p {
+        color: white;
+    }
+
+    .left-text:hover {
+        font-size: 2.8vh;
+        transition: all 0.3s ease;
+    }
+
+    .right-text {
+        float: right;
+        /* margin-left: 2vw; */
+        /* font-size: 2vh; */
+        border: 2px black solid;
+        border-radius: 50px;
+        background-color: black;
+        padding: 5px;
+        font-size: 2.5vh;
+        box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .right-text p {
+        color: white;
+    }
+
+    .right-text:hover {
+        font-size: 2.8vh;
+        transition: all 0.3s ease;
+    }
+
+    .button1 {
+        position: absolute;
+        top: 50%;
+        left: 42%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .button2 {
+        position: absolute;
+        top: 50%;
+        left: 58%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
 }
 
 body,
@@ -51,7 +199,7 @@ html {
 }
 
 #bg {
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
     background: url('https://cdn.discordapp.com/attachments/834745908545323008/854033602282389504/2021-06-14_18.24.22.png') no-repeat center center fixed;
 
@@ -69,6 +217,7 @@ html {
 
     background-position: center;
     background-repeat: no-repeat;
+    margin-left: 5rem;
 }
 
 /* Chrome, Safari, Opera */
